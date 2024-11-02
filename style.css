@@ -1,0 +1,601 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+
+#headerClass{
+    background-image: url(./Image/architecture.jpg);
+    height: 225vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-content {
+    background-color: #fff; /* Couleur de fond blanche */
+    padding: 20px; /* Espacement autour du contenu */
+    text-align: center;
+}
+
+.logo a {
+    font-weight: bold; /* Gras pour le nom */
+    color: #000; /* Couleur noire */
+    text-decoration: none; /* Supprimer le soulignement */
+}
+
+.logo .role {
+    font-weight: normal; /* Texte fin pour "Student Engineer" */
+    color: #000; /* Noir aussi */
+    margin-left: 5px; /* Petit espacement entre le nom et le rôle */
+}
+
+ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px; 
+}
+
+.menu {
+    background-color: #0056b3; /* Couleur de fond blanche pour le menu */
+    padding: 15px; /* Espacement autour des éléments du menu */
+    margin-top: 10px; /* Espacement au-dessus du menu */
+    width: 100%;
+    text-align: center;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff ;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin : 0 10px;
+    font-weight: 500;
+}
+
+/* AAAAA */
+
+.background {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100vh; /* Hauteur de la page */
+}
+
+.blue-rectangle {
+    margin-top: 20px ;
+    background-color: #007BFF; /* Couleur bleu */
+    padding: 20px;
+    width: 30%; /* Largeur du rectangle bleu */
+    border-radius: 8px; /* Coins arrondis */
+    color: white;
+    position: relative;
+    height: 500px
+}
+
+.profile-picture-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    width: 250px; /* Largeur de l'image */
+    height: 250px; /* Hauteur de l'image */
+    border-radius: 50%; /* Rendre l'image ronde */
+    object-fit: cover; /* Adapter l'image dans le cercle */
+}
+
+.name {
+    margin-top: 40px;
+    font-size: 24px; /* Augmentez la taille du texte pour le nom */
+    margin: 10px 0; /* Espacement autour du nom */
+}
+
+.PFseparator {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.6); /* Ligne de séparation légère en blanc */
+    margin: 10px 0; /* Espacement autour de la ligne */
+}
+
+.PFdescription {
+    margin-top: 40px ;
+    font-size: 24px; /* Taille du texte pour la description */
+    margin-top: 40px; /* Espacement autour de la description */
+}
+.description {
+    text-align: center;
+}
+
+.beige-rectangle {
+    margin-top: 50px ;
+    background-color: #F5F5DC; /* Couleur beige */
+    padding: 150px;
+    width: 50%; /* Largeur du rectangle beige */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+.RBmajor-title {
+    font-size: 80px; /* Très grand titre */
+    margin: 5px 0; /* Espacement autour du titre */
+}
+
+.RBdescription {
+    font-size: 20px; /* Un peu plus grand que la taille normale */
+    margin-top: 10px; /* Espacement autour de la description */
+}
+
+.gray-rectangle {
+    background-color: #D3D3D3; /* Couleur gris */
+    padding: 20px;
+    margin: 20px; /* Espace autour du rectangle */
+    border-radius: 8px; /* Coins arrondis */
+    text-align: left; /* Centre le texte à l'intérieur */
+    position: relative; /* Pour la position des éléments internes */
+    overflow: hidden; /* Masquer le débordement */
+    min-height: 400px;
+    max-height: 600px;
+}
+
+.WHtitle {
+    font-size: 70px; /* Taille du titre */
+    margin-bottom: 10px; /* Espacement en bas du titre */
+    margin-top: 70px;
+}
+
+.WHdescription {
+    font-size: 20px; /* Taille de la description */
+    margin-bottom: 20px; /* Espacement en bas de la description */
+    margin: 0; /* Éliminer les marges */
+}
+
+.wheel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligne la roue et le bouton à droite */
+    margin-right: 20px; /* Espace à droite de la roue */
+    transform: translate(-60px, -60px);
+}
+
+.wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid #007BFF;
+    position: relative;
+    transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.slice {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #007BFF;
+    border: 2px solid white;
+    transform-origin: 100% 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    display: flex; /* Utiliser flexbox */
+    justify-content: right; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    font-size: 18px; /* Taille de la police (ajustez si nécessaire) */
+}
+
+.slice:nth-child(1) { transform: rotate(0deg); }
+.slice:nth-child(2) { transform: rotate(60deg); }
+.slice:nth-child(3) { transform: rotate(120deg); }
+.slice:nth-child(4) { transform: rotate(180deg); }
+.slice:nth-child(5) { transform: rotate(240deg); }
+.slice:nth-child(6) { transform: rotate(300deg); }
+
+button {
+    
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.result {
+    align-self: center; 
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-band {
+    background-color: #333; /* Couleur de fond de la bande de contact */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute; /* Positionner en bas */
+    bottom: 1;
+    width: 100%;
+    margin-top: 170px;
+}
+
+.contact-band a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none; /* Enlever le soulignement des liens */
+}
+
+.contact-band a:hover {
+    text-decoration: underline; /* Souligner au survol */
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.TitreEC{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.TitreN7 {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+.TitreArsonval {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.imageArsonval {
+    display: flex;
+    justify-content: center;
+}
+
+.STDAR {
+    font-style: italic; /* Rend le texte en italique */
+    opacity: 0.7; /* Rend le texte légèrement transparent (0.7 = 70% opaque) */
+    color: #333; /* Tu peux ajuster la couleur du texte si nécessaire */
+    text-align: center;
+    margin-bottom: 40px ;
+}
+
+.STN7 {
+    font-style: italic; /* Rend le texte en italique */
+    opacity: 0.7; /* Rend le texte légèrement transparent (0.7 = 70% opaque) */
+    color: #333; /* Tu peux ajuster la couleur du texte si nécessaire */
+    text-align: center;
+    margin-bottom: 40px ;
+}
+
+.descriptionDAR {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #333;
+}
+
+.imageN7 {
+    display: flex;
+    justify-content: center;
+}
+
+.school-image {
+    width: 600px; /* Taille de l'image réduite */
+    height: auto;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.descriptionN7 {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #333;
+}
+
+.TitreSemester {
+    margin-top: 50px;
+    text-align: left; /* Aligne à gauche */
+    margin-left: 20%; /* Décale vers le centre (ajuste cette valeur selon le besoin) */
+    font-size: 28px; /* Taille du texte pour le titre */
+    margin-bottom: 10px; /* Ajoute un espacement en dessous du titre */
+}
+
+.descriptionSemester {
+    margin-left: 20%; /* Aligne la description avec le titre */
+    line-height: 1.6; /* Espace entre les lignes pour faciliter la lecture */
+    font-size: 18px; /* Taille du texte pour la description */
+    white-space: pre-line; /* Respecte les retours à la ligne dans le HTML */
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.TitreC{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+/* Container de la section Career */
+.career-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Style pour le titre de la section Career */
+.career-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.green-rectangle {
+    background-color: #4CAF50; /* Couleur de fond verte */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    max-width: 600px; /* Largeur maximale du rectangle */
+    margin: 20px auto; /* Centrer le rectangle horizontalement */
+    text-align: center; /* Centrer le texte à l'intérieur */
+}
+
+.cv-links p {
+    margin: 0 0 10px; /* Espacement entre le texte et les boutons */
+    color: white; /* Couleur du texte */
+    font-size: 18px; /* Taille de la police */
+}
+
+.btn {
+    text-decoration: none; /* Pas de soulignement sur les liens */
+    padding: 10px 20px; /* Espacement intérieur des boutons */
+    margin: 0 5px; /* Marges entre les boutons */
+    border-radius: 5px; /* Coins arrondis pour les boutons */
+    display: inline-block; /* Affichage en ligne pour les boutons */
+}
+
+.btn-french {
+    background-color: white; /* Couleur de fond du bouton français */
+    color: #4CAF50; /* Couleur du texte du bouton français */
+}
+
+.btn-english {
+    background-color: black; /* Couleur de fond du bouton anglais */
+    color: white; /* Couleur du texte du bouton anglais */
+}
+
+
+/* Section Me in 2 Minutes */
+.me-2-minutes h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.me-2-minutes video {
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.TitreCEL{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.TitreLan {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.flags-container {
+    position: relative; /* Position relative pour l'élément séparateur */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.separator {
+    position: absolute; /* Position absolue pour pouvoir contrôler la ligne */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px; /* Épaisseur de la ligne verticale */
+    height: 100%; /* Prend la hauteur complète du conteneur */
+    background-color: rgba(0, 0, 0, 0.1); /* Couleur légère pour la ligne */
+}
+
+.separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%; /* Prend la largeur complète */
+    height: 2px; /* Épaisseur de la ligne horizontale */
+    background-color: rgba(0, 0, 0, 0.1); /* Couleur légère pour la ligne */
+}
+
+.flag-item {
+    width: 45%; 
+    text-align: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+
+.flag-item img {
+    width: 275px; 
+    height: 175px;
+    margin-right: 20px;
+}
+
+.language-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.language-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.alhambra-image {
+    width: 450px; /* Définissez la largeur que vous souhaitez */
+    height: 250px; /* Cela maintiendra le ratio de l'image */
+}
+
+.Voyagefait {
+    margin-left: 20%; /* Aligne la description avec le titre */
+    line-height: 1.6; /* Espace entre les lignes pour faciliter la lecture */
+    font-size: 18px; /* Taille du texte pour la description */
+    white-space: pre-line; /* Respecte les retours à la ligne dans le HTML */    
+}
+
+/* Style général */
+.introduction, .future-introduction {
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.visited-destinations, .future-destinations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.destinations-list {
+    list-style: none;
+    font-size: 16px;
+}
+
+.image-right {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+
+.country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.flag-image {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.country-info {
+    max-width: 300px;
+}
+
+.country-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.country-description {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+}
+
+.landscape-image {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+figcaption {
+    font-size: 0.9em; /* Taille de police pour la description */
+    color: #666; /* Couleur plus claire pour la description */
+    text-align: center; /* Centrer le texte de la description */
+    margin-top: 5px; /* Espacement au-dessus de la description */
+}
+
+.descriptionSemester {
+    display: flex; /* Utiliser flexbox */
+    flex-direction: column; /* Aligner les éléments verticalement */
+    align-items: flex-start; /* Aligner à gauche */
+    padding-left: 20px; /* Espace à gauche pour les points */
+}
+
+.descriptionSemester::before {
+    content: ""; /* Créer un pseudo-élément */
+    margin-right: 10px; /* Espace entre le point et le texte */
+    background: none; /* S'assurer qu'il n'y a pas de fond */
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.IMcontainer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.IMintro {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.IMsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.IMleft, .IMright {
+    width: 48%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.COUNTRYTitle {
+    margin-bottom: 20px;
+}
+
+.COUNTRYDESCRIPTION {
+    font-size: 20px; /* Ajustez cette valeur pour la taille souhaitée */
+    padding-left: 20px; /* Espace à gauche pour les points */
+    white-space: pre-line; /* Prend en compte les retours à la ligne */
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.TitreOA{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.judoImage{
+    width: 300px; /* Largeur fixe */
+    height: auto; /* Maintenir les proportions de l'image */
+}
