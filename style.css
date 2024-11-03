@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: century;
+    font-family: roboto;
 }
 
 #headerClass{
@@ -13,11 +13,9 @@
     
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
 .header-content {
+
     background-color: #fff; /* Couleur de fond blanche */
     padding: 20px; /* Espacement autour du contenu */
     text-align: center;
@@ -43,11 +41,14 @@ ul{
 }
 
 .menu {
+    display: flex; /* CA */
+    justify-content: space-around;
     background-color: #0056b3; /* Couleur de fond blanche pour le menu */
     padding: 15px; /* Espacement autour des éléments du menu */
     margin-top: 10px; /* Espacement au-dessus du menu */
     width: 100%;
     text-align: center;
+    border-radius: 8px;
 }
 
 ul li a{
@@ -57,6 +58,10 @@ ul li a{
     text-transform: uppercase;
     margin : 0 10px;
     font-weight: 500;
+}
+
+ul li a:hover {
+    color: grey;
 }
 
 /* AAAAA */
@@ -71,7 +76,7 @@ ul li a{
 
 .blue-rectangle {
     margin-top: 20px ;
-    background-color: #007BFF; /* Couleur bleu */
+    background-color: #0056b3; /* Couleur bleu */
     padding: 20px;
     width: 30%; /* Largeur du rectangle bleu */
     border-radius: 8px; /* Coins arrondis */
@@ -117,14 +122,21 @@ ul li a{
 }
 
 .beige-rectangle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 50px ;
     background-color: #F5F5DC; /* Couleur beige */
-    padding: 150px;
+    padding-left : 15vh;
+    padding-right: 15vh;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
     width: 50%; /* Largeur du rectangle beige */
     border-radius: 8px; /* Coins arrondis */
 }
 
 .RBmajor-title {
+    
     font-size: 80px; /* Très grand titre */
     margin: 5px 0; /* Espacement autour du titre */
     
@@ -324,9 +336,9 @@ ul li a{
 }
 
 .VIDEOtexte {
-    font-family: 'Pacifico', cursive; /* Applique la police "Pacifico" */
+    font-family: 'Roboto'; /* Applique la police "Pacifico" */
     text-align: center; /* Centre le texte */
-    font-size: 3em; /* Ajustez la taille de la police selon vos besoins */
+    font-size: 10em; /* Ajustez la taille de la police selon vos besoins */
     color: #333; /* Couleur du texte, ajustez comme nécessaire */
     letter-spacing: 2px; /* Espace entre les lettres pour un effet plus délicat */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre légère pour donner de la profondeur */
@@ -557,7 +569,15 @@ img {
 
 hr {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    margin: 20px;
+}
+
+.HrCourse {
+    margin-left : 40vh;
+    margin-right: 40vh;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .COUNTRYTitle {
@@ -584,4 +604,11 @@ hr {
 .judoImage{
     width: 300px; /* Largeur fixe */
     height: auto; /* Maintenir les proportions de l'image */
+}
+
+
+
+
+.spacing {
+    margin-bottom: 100px;
 }
