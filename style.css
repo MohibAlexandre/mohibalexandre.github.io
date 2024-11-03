@@ -7,9 +7,14 @@
 
 #headerClass{
     background-image: url(./Image/architecture.jpg);
-    height: 225vh;
+    height: auto;
     background-size: cover;
     background-position: center;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 .header-content {
@@ -127,91 +132,16 @@ ul li a{
     margin-top: 10px; /* Espacement autour de la description */
 }
 
-.gray-rectangle {
-    background-color: #D3D3D3; /* Couleur gris */
-    padding: 20px;
-    margin: 20px; /* Espace autour du rectangle */
-    border-radius: 8px; /* Coins arrondis */
-    text-align: left; /* Centre le texte à l'intérieur */
-    position: relative; /* Pour la position des éléments internes */
-    overflow: hidden; /* Masquer le débordement */
-    min-height: 400px;
-    max-height: 600px;
-}
-
-.WHtitle {
-    font-size: 70px; /* Taille du titre */
-    margin-bottom: 10px; /* Espacement en bas du titre */
-    margin-top: 70px;
-}
-
-.WHdescription {
-    font-size: 20px; /* Taille de la description */
-    margin-bottom: 20px; /* Espacement en bas de la description */
-    margin: 0; /* Éliminer les marges */
-}
-
-.wheel-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Aligne la roue et le bouton à droite */
-    margin-right: 20px; /* Espace à droite de la roue */
-    transform: translate(-60px, -60px);
-}
-
-.wheel {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 10px solid #007BFF;
-    position: relative;
-    transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-.slice {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    background-color: #007BFF;
-    border: 2px solid white;
-    transform-origin: 100% 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%);
-    display: flex; /* Utiliser flexbox */
-    justify-content: right; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
-    font-size: 18px; /* Taille de la police (ajustez si nécessaire) */
-}
-
-.slice:nth-child(1) { transform: rotate(0deg); }
-.slice:nth-child(2) { transform: rotate(60deg); }
-.slice:nth-child(3) { transform: rotate(120deg); }
-.slice:nth-child(4) { transform: rotate(180deg); }
-.slice:nth-child(5) { transform: rotate(240deg); }
-.slice:nth-child(6) { transform: rotate(300deg); }
-
-button {
-    
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-.result {
-    align-self: center; 
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-}
 
 .contact-band {
     background-color: #333; /* Couleur de fond de la bande de contact */
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: absolute; /* Positionner en bas */
-    bottom: 1;
+    position: relative; /* Positionner en bas */
+    bottom: 0;
     width: 100%;
-    margin-top: 170px;
+    clear: both;
 }
 
 .contact-band a {
@@ -230,9 +160,11 @@ button {
 .TitreEC{
     text-align: center;
     margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .TitreN7 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     margin-top: 50px;
     margin-bottom: 40px;
@@ -241,6 +173,7 @@ button {
 }
 
 .TitreArsonval {
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     margin-top: 50px;
     margin-bottom: 40px;
@@ -252,7 +185,7 @@ button {
     justify-content: center;
 }
 
-.STDAR {
+.STImage {
     font-style: italic; /* Rend le texte en italique */
     opacity: 0.7; /* Rend le texte légèrement transparent (0.7 = 70% opaque) */
     color: #333; /* Tu peux ajuster la couleur du texte si nécessaire */
@@ -260,15 +193,15 @@ button {
     margin-bottom: 40px ;
 }
 
-.STN7 {
+.STImage2 {
     font-style: italic; /* Rend le texte en italique */
     opacity: 0.7; /* Rend le texte légèrement transparent (0.7 = 70% opaque) */
     color: #333; /* Tu peux ajuster la couleur du texte si nécessaire */
     text-align: center;
-    margin-bottom: 40px ;
 }
 
 .descriptionDAR {
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     max-width: 700px;
     margin: 0 auto;
@@ -289,6 +222,7 @@ button {
 }
 
 .descriptionN7 {
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     max-width: 700px;
     margin: 0 auto;
@@ -297,6 +231,7 @@ button {
 }
 
 .TitreSemester {
+    font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
     text-align: left; /* Aligne à gauche */
     margin-left: 20%; /* Décale vers le centre (ajuste cette valeur selon le besoin) */
@@ -305,6 +240,7 @@ button {
 }
 
 .descriptionSemester {
+    font-family: 'Roboto', sans-serif;
     margin-left: 20%; /* Aligne la description avec le titre */
     line-height: 1.6; /* Espace entre les lignes pour faciliter la lecture */
     font-size: 18px; /* Taille du texte pour la description */
@@ -323,6 +259,9 @@ button {
 .career-section {
     text-align: center;
     margin-top: 30px;
+    width: 80%;
+    margin-left: auto; /* Centre la section horizontalement */
+    margin-right: auto;
 }
 
 /* Style pour le titre de la section Career */
@@ -371,6 +310,15 @@ button {
     margin-bottom: 10px;
 }
 
+.VIDEOtexte {
+    font-family: 'Pacifico', cursive; /* Applique la police "Pacifico" */
+    text-align: center; /* Centre le texte */
+    font-size: 3em; /* Ajustez la taille de la police selon vos besoins */
+    color: #333; /* Couleur du texte, ajustez comme nécessaire */
+    letter-spacing: 2px; /* Espace entre les lettres pour un effet plus délicat */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre légère pour donner de la profondeur */
+}
+
 .me-2-minutes video {
     margin-top: 10px;
     border-radius: 8px;
@@ -384,12 +332,23 @@ button {
     margin-bottom: 40px;
 }
 
+.Attente {
+    font-family: 'Pacifico', cursive; /* Applique la police "Pacifico" */
+    text-align: center; /* Centre le texte */
+    font-size: 3em; /* Ajustez la taille de la police selon vos besoins */
+    color: #333; /* Couleur du texte, ajustez comme nécessaire */
+    letter-spacing: 2px; /* Espace entre les lettres pour un effet plus délicat */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre légère pour donner de la profondeur */
+
+}
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 .TitreLan {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .flags-container {
@@ -438,12 +397,14 @@ button {
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .language-description {
     font-size: 14px;
     color: #555;
     margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .alhambra-image {
@@ -456,6 +417,7 @@ button {
     line-height: 1.6; /* Espace entre les lignes pour faciliter la lecture */
     font-size: 18px; /* Taille du texte pour la description */
     white-space: pre-line; /* Respecte les retours à la ligne dans le HTML */    
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Style général */
@@ -463,6 +425,7 @@ button {
     font-size: 18px;
     margin: 20px 0;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .visited-destinations, .future-destinations {
@@ -470,11 +433,13 @@ button {
     align-items: center;
     justify-content: space-between;
     margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .destinations-list {
     list-style: none;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .image-right {
@@ -504,12 +469,14 @@ button {
 .country-name {
     font-weight: bold;
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .country-description {
     font-style: italic;
     color: rgba(0, 0, 0, 0.8);
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .landscape-image {
@@ -530,6 +497,7 @@ figcaption {
     flex-direction: column; /* Aligner les éléments verticalement */
     align-items: flex-start; /* Aligner à gauche */
     padding-left: 20px; /* Espace à gauche pour les points */
+    font-family: 'Roboto', sans-serif;
 }
 
 .descriptionSemester::before {
@@ -554,6 +522,7 @@ h1 {
 .IMintro {
     font-size: 1.2em;
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .IMsection {
@@ -579,12 +548,14 @@ hr {
 
 .COUNTRYTitle {
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .COUNTRYDESCRIPTION {
     font-size: 20px; /* Ajustez cette valeur pour la taille souhaitée */
     padding-left: 20px; /* Espace à gauche pour les points */
     white-space: pre-line; /* Prend en compte les retours à la ligne */
+    font-family: 'Roboto', sans-serif;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------*/
