@@ -97,6 +97,7 @@ ul li a{
     margin-top: 40px;
     font-size: 24px; /* Augmentez la taille du texte pour le nom */
     margin: 10px 0; /* Espacement autour du nom */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .PFseparator {
@@ -109,6 +110,7 @@ ul li a{
     margin-top: 40px ;
     font-size: 24px; /* Taille du texte pour la description */
     margin-top: 40px; /* Espacement autour de la description */
+    font-family: 'Montserrat', sans-serif;
 }
 .description {
     text-align: center;
@@ -125,11 +127,13 @@ ul li a{
 .RBmajor-title {
     font-size: 80px; /* Très grand titre */
     margin: 5px 0; /* Espacement autour du titre */
+    
 }
 
 .RBdescription {
     font-size: 20px; /* Un peu plus grand que la taille normale */
     margin-top: 10px; /* Espacement autour de la description */
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -154,6 +158,9 @@ ul li a{
     text-decoration: underline; /* Souligner au survol */
 }
 
+.TitreContact {
+    font-family: 'Roboto', sans-serif;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -253,6 +260,7 @@ ul li a{
     text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Container de la section Career */
@@ -268,6 +276,11 @@ ul li a{
 .career-title {
     font-size: 32px;
     margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.CVtexte {
+    font-family: 'Roboto', sans-serif;
 }
 
 .green-rectangle {
@@ -330,6 +343,7 @@ ul li a{
     text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Attente {
@@ -564,6 +578,7 @@ hr {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .judoImage{
