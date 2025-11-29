@@ -606,7 +606,10 @@ hr {
     height: auto; /* Maintenir les proportions de l'image */
 }
 
-
+.CapitoleLibreimg{
+    width: 500px; /* Largeur fixe */
+    height: auto; /* Maintenir les proportions de l'image */
+}
 
 
 .spacing {
