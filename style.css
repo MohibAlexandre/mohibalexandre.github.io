@@ -612,7 +612,7 @@ hr {
 }
 
 .COP1Image{
-    width: 250px; /* Largeur fixe */
+    width: 240px; /* Largeur fixe */
     height: auto; /* Maintenir les proportions de l'image */
 }
 
