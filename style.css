@@ -611,6 +611,10 @@ hr {
     height: auto; /* Maintenir les proportions de l'image */
 }
 
+.COP1Image{
+    width: 250px; /* Largeur fixe */
+    height: auto; /* Maintenir les proportions de l'image */
+}
 
 .spacing {
     margin-bottom: 100px;
