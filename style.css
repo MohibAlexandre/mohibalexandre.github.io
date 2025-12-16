@@ -10,7 +10,6 @@
     height: auto;
     background-size: cover;
     background-position: center;
-    
 }
 
 
@@ -71,7 +70,7 @@ ul li a:hover {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    height: 100vh; /* Hauteur de la page */
+    height: 80vh; /* Hauteur de la page */
 }
 
 .blue-rectangle {
@@ -133,6 +132,25 @@ ul li a:hover {
     padding-top: 5vh;
     width: 50%; /* Largeur du rectangle beige */
     border-radius: 8px; /* Coins arrondis */
+}
+
+.beige-rectangle2 {
+    position: relative;
+    top: -20px; /* 🔥 remonte le bloc */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #F5F5DC; /* Couleur beige */
+
+    padding: 10vh 15vh 10vh 15vh;
+
+    width: 80%;
+    max-width: 1200px; /* optionnel mais conseillé */
+
+    margin: 0px auto 0px auto; /* haut | centré | bas */
+
+    border-radius: 8px;
 }
 
 .RBmajor-title {
@@ -549,6 +567,7 @@ h1 {
     font-size: 1.2em;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 .IMsection {
@@ -586,10 +605,11 @@ hr {
 }
 
 .COUNTRYDESCRIPTION {
-    font-size: 20px; /* Ajustez cette valeur pour la taille souhaitée */
+    font-size: 20px;
     padding-left: 20px; /* Espace à gauche pour les points */
     white-space: pre-line; /* Prend en compte les retours à la ligne */
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------*/
